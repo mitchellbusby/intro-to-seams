@@ -3,18 +3,18 @@ using System.Threading;
 
 namespace IntroToSeams.Services
 {
-    public class ExampleRepository
+    public class PayPalGateway
     {
-        private static ExampleRepository instance = null;
+        private static PayPalGateway instance = null;
 
-        public ExampleRepository()
+        public PayPalGateway()
         {
         }
 
-        public static ExampleRepository Instance {
+        public static PayPalGateway Instance {
             get {
                 if (instance == null) {
-                    instance = new ExampleRepository();
+                    instance = new PayPalGateway();
                 }
 
                 return instance;
